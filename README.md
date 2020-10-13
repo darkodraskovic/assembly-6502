@@ -20,7 +20,7 @@ For further options, see [stella command line options](https://stella-emu.github
 
 ## Assemle and run example
 
-From project root directory
+To compile and run a program in a `cleanmem` directory, for example, from project root directory execute
 
 ```
 cd cleanmem && dasm cleanmem.asm -f3 -v0 -ocart.bin && stella cart.bin
