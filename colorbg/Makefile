@@ -1,8 +1,8 @@
 all:
-	dasm *.asm -f3 -v0 -ocart.bin
+	dasm *.asm -f3 -v0 -ocart.bin -lcart.lst -scart.sym
 
 run:
 	stella cart.bin
 
 debug:
-	stella cart.bin -debug
+	stella -debug cart.bin

@@ -1,2 +1,4 @@
 slides.svg 
-**/*.bin
+*.bin
+*.lst
+*.sym
