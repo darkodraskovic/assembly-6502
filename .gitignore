@@ -2,3 +2,4 @@ slides.svg
 *.bin
 *.lst
 *.sym
+sandbox*

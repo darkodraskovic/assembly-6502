@@ -5,7 +5,7 @@
 Start:
         sei                     ; disable interrupts
         cld                     ; disable BCD decimal mode, i.e. cl(lear) d flag
-        ldx #$FF                ; loads x reg with #$FF
+        ldx #$FF                ; loads x reg with literal(#) hex($) val FF
         txs                     ; transfer x reg to S(tack)P(ointer) reg
 
 ;;; Clears the Zero Page region ($00 to $FF)
@@ -16,7 +16,7 @@ Start:
 
 MemLoop:
         sta $0,X                ; store val in accu (#0) in mem pos $0 + val in X
-        dex                     ; X--
+        dex                     ; reg X--
         bne MemLoop             ; loop until X == 0 (z-flag set)
 
 ;;; Fill ROM size to 4KB
