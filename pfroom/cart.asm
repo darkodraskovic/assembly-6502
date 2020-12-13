@@ -43,7 +43,7 @@ NextFrame:
         ldx #$84
         stx COLUPF              ; set the playfield color
         ldy 1
-        sty CTRLPF              ; reflect playfield left half (CTRLPF register > D0 means reflect)
+        sty CTRLPF              ; reflect playfield left half (CTRLPF register D0 means reflect)
 
 ;;; 7 scanlines of no playfield
         REPEAT 7
