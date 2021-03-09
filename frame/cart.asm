@@ -39,14 +39,20 @@ VBlank:
 
 ;;; Draw 192 VISIBLE scanlines (kernel)
 
-        ldx #$B6
+        ldx #$B7
         stx COLUBK              ; set the background color
 
-        ldx #$84
+        ldx #$85
         stx COLUPF              ; set the playfield color
         ldy 1
         sty CTRLPF              ; reflect playfield left half (CTRLPF register > D0 means reflect)
-
+        ;; ldy #%10110000
+        ;; sty PF0
+        ;; ldy #%11111101
+        ;; sty PF1
+        ;; ldy #%11111101
+        ;; sty PF2
+        
         ldx #192
 Visible:
         sta WSYNC

@@ -23,12 +23,12 @@ For further options, see [stella command line options](https://stella-emu.github
 To compile and run a program in a `cleanmem` directory, for example, from project root directory execute
 
 ```
-cd cleanmem && dasm cleanmem.asm -f3 -v0 -ocart.bin && stella cart.bin
+cd cleanmem && dasm cart.asm -f3 -v0 -ocart.bin && stella cart.bin
 ```
 
 or 
 
 ```
-cd cleanmem && dasm cleanmem.asm -f3 -v0 -ocart.bin && stella cart.bin -debug
+cd cleanmem && dasm cart.asm -f3 -v0 -ocart.bin && stella cart.bin -debug
 ```
 if you want to jump in directly into the debug mode.
